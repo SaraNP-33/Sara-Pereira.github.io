@@ -13,13 +13,15 @@ const AboutMe = () => {
             <div className="col-lg-6 col-xm-12">
                 <h2 className="about-heading">about me</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, expedita facere illum ipsam quam cumque fugit repellat perspiciatis, blanditiis voluptatum dignissimos sapiente repellendus nobis! Optio dignissimos dolores nihil soluta ad.
+                Full-Stack Web Developer with a Certificate from the University of Arizona with skills including Javascript, jQuery, Node, Express, React, MySql, and MongoDB among others. Sara’s passion for Software Development is rooted by her love of learning, her aptitude for problem solving and her aspiration to carry projects through to their completion… from back… to front.
                 </p>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, expedita facere illum ipsam quam cumque fugit repellat perspiciatis, blanditiis voluptatum dignissimos sapiente repellendus nobis! Optio dignissimos dolores nihil soluta ad.
+                Sara currently resides in Phoenix, AZ but was born and raised in The Azores islands in the middle of the Atlantic. Multilingual, in addition to English, Sara also speaks Portuguese, French and Spanish.
+
                 </p>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, expedita facere illum ipsam quam cumque fugit repellat perspiciatis, blanditiis voluptatum dignissimos sapiente repellendus nobis! Optio dignissimos dolores nihil soluta ad.
+                Other education worth noting includes a Social and Cultural Analysis Degree from Arizona State University and a Cinema Production degree from ESRA (École Supérieure de Réalisation Audiviosuelle) in Paris, France. These show that Sara has been always interested in the mystery of how things work… which is why she knows that she has found the right profession in Web Development… the ultimate puzzle
+
                 </p>
             </div>
             </div>
