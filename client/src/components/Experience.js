@@ -10,9 +10,9 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h4>2020-Present</h4>
+                       <h4>Nov 2020 - <span>Current</span></h4>
                         <h5>Tutor for Full Stack Coding Program at 2U</h5>
-                        <p>.Supports Students during their program. Manages personal roster and sessions</p>
+                        <p>.Supports Students during their program </p>
                         <p>.Manages personal roster and sessions</p>
                         <p>.Researchs and continues learning to give students the best support</p>
                     </div>

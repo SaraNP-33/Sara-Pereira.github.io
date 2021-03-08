@@ -194,6 +194,7 @@ nav ul li {
 .about-heading {
   color: var(--light-turquoise);
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media(max-width: 468px) {

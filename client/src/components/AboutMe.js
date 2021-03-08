@@ -11,7 +11,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="col-lg-6 col-xm-12">
-                <h2 className="about-heading">about me</h2>
+                <h2 className="about-heading">about</h2>
                 <p>
                 Full-Stack Web Developer with a Certificate from the University of Arizona with skills including Javascript, jQuery, Node, Express, React, MySql, and MongoDB among others. Sara’s passion for Software Development is rooted by her love of learning, her aptitude for problem solving and her aspiration to carry projects through to their completion… from back… to front.
                 </p>
