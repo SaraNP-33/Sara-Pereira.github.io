@@ -1,12 +1,13 @@
 import React from "react";
+// import projectOne from "../images/projects/imgOne.jpg";
 import projectOne from "../images/projects/qsm.jpg";
-import projectTwo from "../images/projects/imgTwo.jpg";
-import projectThree from "../images/projects/imgThree.jpg";
-import projectFour from "../images/projects/imgFour.jpg";
-import projectFive from "../images/projects/imgFive.jpg";
-import projectSix from "../images/projects/imgSix.jpg";
-import projectSeven from "../images/projects/imgSeven.jpg";
-import projectEight from "../images/projects/imgEight.jpg";
+import projectTwo from "../images/projects/googleBooks.jpg";
+import projectThree from "../images/projects/reactGame.jpg";
+import projectFour from "../images/projects/scraper.jpg";
+import projectFive from "../images/projects/bookApp.jpg";
+import projectSix from "../images/projects/bamazon.jpg";
+import projectSeven from "../images/projects/liriBot.jpg";
+import projectEight from "../images/projects/hangman.jpg";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons"
@@ -33,7 +34,7 @@ const Portfolio = () => {
         config: {
           titleBar: {
             enable: true,
-            text: "Project One"
+            text: "Queen Street Market"
           },
           fadeIn: true,
           fadeInSpeed: 500
@@ -45,7 +46,7 @@ const Portfolio = () => {
     const popupboxConfigProjectOne = {
         titleBar: {
             enable: true,
-            text: "Project One"
+            text: "Queen Street Market"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -68,7 +69,7 @@ const Portfolio = () => {
         config: {
           titleBar: {
             enable: true,
-            text: "Project Two"
+            text: "Google Books"
           },
           fadeIn: true,
           fadeInSpeed: 500
@@ -79,7 +80,7 @@ const Portfolio = () => {
     const popupboxConfigProjectTwo = {
         titleBar: {
             enable: true,
-            text: "Project Two"
+            text: "Google Books"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -102,7 +103,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Three"
+                text: "Scrubs React Game"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -113,7 +114,7 @@ const Portfolio = () => {
     const popupboxConfigProjectThree = {
         titleBar: {
             enable: true,
-            text: "Project Three"
+            text: "Scrubs React Game"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -136,7 +137,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Four"
+                text: "Recipe Scraper"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -147,7 +148,7 @@ const Portfolio = () => {
     const popupboxConfigProjectFour = {
         titleBar: {
             enable: true,
-            text: "Project Four"
+            text: "Recipe Scraper"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -170,7 +171,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Five"
+                text: "Book App"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -181,7 +182,7 @@ const Portfolio = () => {
     const popupboxConfigProjectFive = {
         titleBar: {
             enable: true,
-            text: "Project Five"
+            text: "Book App"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -204,7 +205,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Six"
+                text: "Bamazon"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -215,7 +216,7 @@ const Portfolio = () => {
         const popupboxConfigProjectSix = {
           titleBar: {
               enable: true,
-              text: "Project Six"
+              text: "Bamazon"
           },
           fadeIn: true,
           fadeInSpeed: 500
@@ -238,7 +239,7 @@ const openPopupboxProjectSeven = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Project Seven"
+          text: "Liribot"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -249,7 +250,7 @@ const openPopupboxProjectSeven = () => {
   const popupboxConfigProjectSeven = {
     titleBar: {
         enable: true,
-        text: "Project Seven"
+        text: "Liribot"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -272,7 +273,7 @@ const openPopupboxProjectEight = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Project Eight"
+          text: "Hangman"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -283,7 +284,7 @@ const openPopupboxProjectEight = () => {
   const popupboxConfigProjectEight = {
     titleBar: {
         enable: true,
-        text: "Project Eight"
+        text: "Hangman"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -292,53 +293,61 @@ const openPopupboxProjectEight = () => {
     return (
         <div className="portfolio-wrapper" id="portfolio">
             <div className="container">
-                <h2 className="text-uppercase text-center py-5">portfolio</h2>
+                <h2 className="text-uppercase text-center py-3">portfolio</h2>
                 <div className="image-box-wrapper row justify-content-center">
                     <div className="portfolio-image-box" onClick={openPopupboxProjectOne}>
                         <img className = "portfolio-image" src={projectOne} alt="Project One"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Queen Street Market</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectTwo}>
                         <img className = "portfolio-image" src={projectTwo} alt="Project Two"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Google Books</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectThree}>
                         <img className = "portfolio-image" src={projectThree} alt="Project Three"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Scrubs React Game</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectFour}>
                         <img className = "portfolio-image" src={projectFour} alt="Project Four"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Recipe Scraper</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectFive}>
                         <img className = "portfolio-image" src={projectFive} alt="Project Five"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Book App</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectSix}>
                         <img className = "portfolio-image" src={projectSix} alt="Project Six"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Bamazon</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectSeven}>
                         <img className = "portfolio-image" src={projectSeven} alt="Project Seven"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Liribot</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectEight}>
                         <img className = "portfolio-image" src={projectEight} alt="Project Eight"/>
-                        <div className="overflow"></div>
+                        <div className="overlay"></div>
+                        <h4 className="title">Hangman</h4>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 </div>

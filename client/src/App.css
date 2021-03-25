@@ -475,81 +475,86 @@ nav ul li {
 }
 
 /* ********************** PORTFOLIO ********************** */
-
 .portfolio-wrapper h2 {
   text-transform: uppercase;
   color: var(--bright-orange);
 }
-
 .portfolio-wrapper {
   background: var(--light-grey);
   padding: 3rem 0;
 }
-
 .portfolio-image {
   width: 15rem;
-  border: 1px solid var(--bright-orange);
+  border: 2px solid var(--bright-orange);
   padding: 0.5rem;
 }
-
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
+  display: flex;
+  justify-content: center;
 }
-
 /* ********************** Portfolio Thumbnails ********************** */
-
-.overflow {
+.overlay {
   position: absolute;
   opacity: 0;
-  background: var(--dark-grey);
+  background: var(--white);
   width: 15rem;
   height: 100%;
   top: 0;
-  border: 1px solid var(--bright-orange);
+  border: 2px solid var(--bright-orange);
   cursor: pointer;
 }
-
-.portfolio-image-box:hover .overflow {
-  opacity: 60%;
+.portfolio-image-box:hover .overlay {
+  opacity: 85%;
   transition: 0.3s ease-in-out;
 }
-
 .portfolio-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -8rem;
-  margin-top: 4.5rem;
-  color: var(--bright-orange);
+  margin-left: .6rem;
+  top: 5rem;
+  color: #3D4652;
   font-size: 2rem;
 }
-
 .portfolio-image-box:hover .portfolio-icon {
-  opacity: 70%;
+  opacity: 1;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-
+.title {
+  position: absolute;
+  opacity: 0;
+  top: 2vh;
+  color: #3D4652;
+  width: 98%;
+  text-align: center;
+  background-color: var(--bright-orange);
+  color: white;
+}
+.portfolio-image-box:hover .title {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  padding: 0.3rem;
+  border-top: 6px double var(--white);
+  border-bottom: 6px double var(--white);
+  cursor: pointer;
+}
 /* ********************** POP-UP BOX ********************** */
-
 .popupbox-wrapper {
   text-align: center;
   max-width: 50% !important;
   margin-top: 7rem;
 }
-
 .portfolio-image-popupbox {
-  width: 40rem;
+  width: 30rem;
   max-width: 90%;
   padding: 0 0.5rem 0.5rem 0;
-  
 }
-
 .hyper-link {
   cursor: pointer;
   color: var(--light-turquoise);
 }
-
 .hyper-link:hover {
   color: var(--bright-orange);
 }
@@ -652,12 +657,13 @@ nav ul li {
 /* ********************** CONTACT ********************** */
 
 .contact {
-  background: var(--light-grey);
+  /* background: var(--light-grey); */
   padding: 3rem 0;
+  height:70vh;
 }
 
 .contact h2 {
-  color: var(--bright-orange);
+  color: var(--light-turquoise);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }
@@ -704,18 +710,18 @@ nav ul li {
   min-width: 7rem;
   float: right;
   text-decoration: none;
-  background-color: var(--bright-orange);
-  color: var(--white);
-  transition: .2s ease-in-out;
-  border-width: 0.5px;
-  border-color: var(--bright-orange);
-}
-
-.contact-btn:hover {
   background-color: var(--light-turquoise);
   color: var(--white);
   transition: .2s ease-in-out;
+  border-width: 0.5px;
   border-color: var(--light-turquoise);
+}
+
+.contact-btn:hover {
+  background-color: var(--bright-orange);
+  color: var(--white);
+  transition: .2s ease-in-out;
+  border-color: var(--bright-orange);
 }
 
 .line {
