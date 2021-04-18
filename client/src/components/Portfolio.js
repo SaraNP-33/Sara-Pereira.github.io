@@ -22,10 +22,12 @@ const Portfolio = () => {
         const content = (
             <>
     <img className = "portfolio-image-popupbox" src={projectOne} alt="Project One"/>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-    <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+    <p>Queen St Market is an e-commerce store where the user can shop for a product, view the details of a product, 
+              add it to the cart and checkout. 
+              The user must sign-up and log in in order to access the cart and checkout pages of the app.</p>
+    <b>Demo: </b> <a className="hyper-link" href="https://queen-st-market.herokuapp.com/">https://queen-st-market.herokuapp.com/</a>
     <br/>
-    <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+    <b>GitHub: </b> <a className="hyper-link" href="https://github.com/niashagrant/mern-store">https://github.com/niashagrant/mern-store</a>
     </>
     )
     PopupboxManager.open({ content })
@@ -57,10 +59,10 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectTwo} alt="Project Two"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident        quisrecusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <p>Google Book Search is a MERN app using Google API that allows users to search for books, save them and delete them as well as connect to the Google Books Url to purchase the books or simply view more details.</p>
+            <b>Demo: </b> <a className="hyper-link" href="https://google-books-search-171113.herokuapp.com/">https://google-books-search-171113.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/googleBooks">https://github.com/SaraNP-33/googleBooks</a>
           </>
     )
     PopupboxManager.open({ content });
@@ -91,10 +93,10 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectThree} alt="Project Three"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <p>A memory game create with REACT. The user clicks on an image which prompts them to shuffle. if the user clicks on the same image twice they lose.</p>
+            <b>Demo: </b> <a className="hyper-link" href="https://saranp-33.github.io/ClickyGame/">https://saranp-33.github.io/ClickyGame/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/ClickyGame">https://github.com/SaraNP-33/ClickyGame</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -125,10 +127,10 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectFour} alt="Project Four"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <p>This app was built using Express as a server, MongoDB the Database along with Mongoose as a ODM and Handlebars as the template. The dependencies used to scrape were axios and cheerio.</p>
+            <b>Demo: </b> <a className="hyper-link" href="https://damp-eyrie-19615.herokuapp.com/">https://damp-eyrie-19615.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/Scraper">https://github.com/SaraNP-33/Scraper</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -159,10 +161,10 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectFive} alt="Project Five"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <p>A simple full stack app. When the user adds a book, this book is saved in MySQL database. This app uses Express to communicate the user input to the database and Handlebars as the UI.</p>
+            <b>Demo: </b> <a className="hyper-link" href="https://morning-sea-53877.herokuapp.com/">https://morning-sea-53877.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/bookapp2">https://github.com/SaraNP-33/bookapp2</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -193,10 +195,10 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectSix} alt="Project Six"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <p>A node and mySQL app demonstrating the correlation of a database with user input activity. This is a back end exercise only, meaning the results are seen only on the console.</p>
+            <b>Demo: </b> <a className="hyper-link" href="#">This is a CLI app</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/bamazon">https://github.com/SaraNP-33/bamazon</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -227,10 +229,10 @@ const openPopupboxProjectSeven = () => {
   const content = (
     <>
       <img className = "portfolio-image-popupbox" src={projectSeven} alt="Project Seven"/>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-      <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <p>A node application that retrieves information on music, concerts and movies from 3 different API's. Axios, is the middleware being used to perform the api calls, and we use the inbuilt node method of readFile and writeFile to process the information.</p>
+      <b>Demo: </b> <a className="hyper-link" href="#">This is a CLI App</a>
       <br/>
-      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/LiriBot">https://github.com/SaraNP-33</a>
     </>
 )
   PopupboxManager.open({ content });
@@ -261,10 +263,10 @@ const openPopupboxProjectEight = () => {
   const content = (
     <>
       <img className = "portfolio-image-popupbox" src={projectEight} alt="Project Eight"/>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-      <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <p> A vanilla Javascript application that allows the user to play a Hangman inspired game</p>
+      <b>Demo: </b> <a className="hyper-link" href=" https://saranp-33.github.io/Word-Guess-Game/"> https://saranp-33.github.io/Word-Guess-Game/</a>
       <br/>
-      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/Word-Guess-Game">https://github.com/SaraNP-33/Word-Guess-Game</a>
     </>
 )
   PopupboxManager.open({ content });
