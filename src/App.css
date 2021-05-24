@@ -19,7 +19,7 @@ body {
 
 /* ******************** NAVBAR ************************ */
 
-nav {
+#nav {
   z-index: 2;
   /* background-color: var(--turquoise); */
   background-color: var(--dark-pink);
@@ -32,45 +32,130 @@ nav {
 
 /* **************** Menu Links *********************** */
 
-nav a.nav-link {
-  font-size: .8rem;
-  font-weight: 300;
-  letter-spacing: 0.0375px;
+.fixed-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: var(--dark-pink);
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  top: 100;
+  min-width: 414px;
+}
+.name {
+  font-size: 2.5rem;
+  color: var(--white);
+  cursor: default;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+  font-size: 1rem;
+}
+.nav-home,
+.nav-about,
+.nav-skills,
+.nav-experience,
+.nav-portfolio,
+.nav-references,
+.nav-contact {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0 0.3vw;
+  margin: 1vh 0.5vw 0 0;
   cursor: pointer;
-}
-
-nav ul li {
   text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
 }
-
-.navbar-nav > li > a {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
+.nav-home:hover,
+.nav-about:hover,
+.nav-skills:hover,
+.nav-experience:hover,
+.nav-portfolio:hover,
+.nav-references:hover,
+.nav-contact:hover {
+  color: var(--white);
+  text-decoration: underline overline;
+  text-underline-position: under;
+}
+.mobile-menu-icon {
+  display: none;
+}
+.diamond {
+  color: var(--white);
+  margin-top: 0.9vh;
+  margin-right: 0.5vw;
+}
+.close {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 1vh 3vw;
+  font-style: normal;
   color: var(--white) !important;
-  /* border-top: 0.1875rem solid var(--dark-pink); */
-  border-bottom: 0.1875rem solid var(--dark-pink);
 }
-
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 6rem !important;
-}
-
-@media(max-width: 768px) {
-  .navbar-brand {
-    width: 7rem;
+@media (max-width: 940px) {
+  .name {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
   }
+  .diamond,
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: var(--dark-pink);
+    left: 0;
+    top: 75px;
+    padding: 0;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid var(--white);
+  }
+.nav-home,
+.nav-about,
+.nav-skills,
+.nav-experience,
+.nav-portfolio,
+.nav-references,
+.nav-contact {
+  color: var(--white);
+  text-align: center;
+  padding: 32px;
+  width: 100%;
+  transition: all 0.5s ease;
 }
-
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-bottom: 0.12rem solid var(--white);
-  transition: 0.5s;
+.mobile-menu-icon {
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  color: var(--white);
+  background-color: var(--dark-pink);
+  border: none;
+  outline: none;
+  top: 15px;
+  right: 25px;
+  font-family: serif;
 }
-
-.navbar-nav > li > a:hover {
-  border-bottom: 0.12rem solid var(--white);
-  transition: 0.5s;
+}
+@media (min-width: 941px) {
+  .nav-links,
+  .diamond {
+    display: inline-flex;
+  }
+  .nav-links-mobile {
+    display: none;
+  }
 }
 
 /* ******************** HEADER ************************ */
