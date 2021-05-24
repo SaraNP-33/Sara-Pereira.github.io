@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="infoRow">
-        <p className="footer-name">Sara Neves Pereira</p>
+        {/* <p className="footer-name">Sara Neves Pereira</p> */}
         <div className="email">
           <a href="mailto: sara.neves.pereira@gmail.com" rel="noreferrer" target="_blank">
             sara.neves.pereira@gmail
           </a>
         </div>
         <div className="town">
-          <p>Covering all Timezones<br/>from the Azores to California</p>
+          <em>Covering all timezones<br/>from the Azores to California</em>
         </div>
       </div>
       <div className="github">

@@ -20,41 +20,32 @@ body {
 /* ******************** NAVBAR ************************ */
 
 #nav {
-  z-index: 2;
-  /* background-color: var(--turquoise); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
   background-color: var(--dark-pink);
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  min-width: 100vw;
+  padding: 0 5vw;
 }
 
 .logo {
-  width: 19.25rem;
+  width: 15rem;
   margin-top: -20px;
 }
 
 /* **************** Menu Links *********************** */
 
-.fixed-navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 75px;
-  background-color: var(--dark-pink);
-  position: fixed;
-  z-index: 1;
-  width: 100vw;
-  top: 100;
-  min-width: 414px;
-}
-.name {
-  font-size: 2.5rem;
-  color: var(--white);
-  cursor: default;
-}
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   width: 75%;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 .nav-home,
 .nav-about,
@@ -99,28 +90,28 @@ body {
   color: var(--white) !important;
 }
 @media (max-width: 940px) {
-  .name {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    left: 35px;
+
+ #nav  {
+    justify-content: space-between;
   }
+
   .diamond,
   .nav-links {
     display: none;
   }
+
   .nav-links-mobile {
     position: absolute;
     display: block;
     list-style: none;
     background-color: var(--dark-pink);
     left: 0;
-    top: 75px;
+    top: 100px;
     padding: 0;
     transition: all 0.5s ease-out;
     width: 100%;
-    z-index: 1;
-    border-bottom: 3px solid var(--white);
+    z-index: 10;
+    /* border-bottom: 3px solid var(--white); */
   }
 .nav-home,
 .nav-about,
@@ -138,14 +129,15 @@ body {
 .mobile-menu-icon {
   display: block;
   position: absolute;
-  font-size: 30px;
   color: var(--white);
   background-color: var(--dark-pink);
   border: none;
   outline: none;
-  top: 15px;
+  top: 3vh;
   right: 25px;
   font-family: serif;
+  align-self: center;
+  font-size: 1.5rem;
 }
 }
 @media (min-width: 941px) {
@@ -295,6 +287,7 @@ body {
   text-align: center;
   padding-top: 2rem;
   background: var(--light-grey);
+  z-index: -5;
 }
 
 .skills h2 {
@@ -337,7 +330,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
+  z-index: 1;
 }
 
 .skillsLogo {
@@ -513,7 +506,7 @@ body {
   border: 0.3125rem solid var(--dark-turquoise);
   background: var(--bright-orange);
   margin-top: 0.625rem;
-  z-index: 3;
+  z-index: 1;
 }
 
 .timeline-content {
@@ -957,6 +950,9 @@ textarea.form-control {
   text-decoration: none;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+}
+.town {
+  font-size: .8rem;
 }
 .footer p {
   margin-bottom: 0;
